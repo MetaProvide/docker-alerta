@@ -37,7 +37,7 @@ jobs:
 
       - name: Get version number
         run: |
-          VER=$(grep "FROM nextcloud:" Dockerfile)
+          VER=$(grep "FROM alerta/alerta-web:" Dockerfile)
           VER=${VER#*:}
           VER=${VER%@*}
           VER=${VER%-*}
