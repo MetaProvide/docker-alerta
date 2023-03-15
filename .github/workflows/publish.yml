@@ -6,7 +6,7 @@ on:
       - "main"
 
 env:
-  IMAGE_NAME: metaprovide/alerta
+  IMAGE_NAME: metabotter/alerta
 
 jobs:
   lint_dockerfile:
