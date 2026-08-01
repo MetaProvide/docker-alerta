@@ -5,7 +5,7 @@ on: pull_request
 jobs:
   lint_dockerfile:
     runs-on: ubuntu-latest
-    container: hadolint/hadolint:latest-debian
+    container: hadolint/hadolint:latest-debian@sha256:9a3944b7fddcb947d1ffd90829ac1a6e5c30479223358f249d8b96c7d0019e27
     steps:
       - name: Checkout
         uses: actions/checkout@v2
